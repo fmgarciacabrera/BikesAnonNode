@@ -19,7 +19,7 @@ The project may optionally include:
 
 And finally, we're providing this repo in JavaScript (because it has the widest audience) but if you really want to, you can convert it to TypeScript (or just do your part in TypeScript).
 
-** Internal Dev Plan for this Project
+## Internal Dev Plan for this Project
 
 1) install required node packages (express and ??),
 2) configure authentication, including seeds,
