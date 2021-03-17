@@ -18,3 +18,9 @@ The project may optionally include:
 - Other, myriad bad practices (which you are welcome to fix as part of this project - is that jpg really 8MB?)
 
 And finally, we're providing this repo in JavaScript (because it has the widest audience) but if you really want to, you can convert it to TypeScript (or just do your part in TypeScript).
+
+** Internal Dev Plan for this Project
+
+1) install required node packages (express and ??),
+2) configure authentication, including seeds,
+3) write a few tests for desired functionality??
