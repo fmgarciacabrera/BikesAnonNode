@@ -13,7 +13,8 @@ describe('auth router', () => {
       .expect(200, { user: 'f@mail.com' });
   });
 
-  test('/login to return 400 if theres some missing data', async () => {
+  test('/login to return 400 if theres some missing data', (done) => {
+    api.get(200, done)
     await api
       .post('/auth/login')
       .send({ email: 'test@mail.com' })
