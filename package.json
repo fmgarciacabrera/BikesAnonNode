@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:SecretSourceWeb/BikesAnonNode.git",
-  "author": "Manuel Hernández <manu.hdez.dev@gmail.com>",
+  "author": "",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --exec babel-node src/app.js",

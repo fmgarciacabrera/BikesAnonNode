@@ -13,11 +13,10 @@ describe('auth router', () => {
       .expect(200, { user: 'f@mail.com' });
   });
 
-  test('/login to return 400 if theres some missing data', (done) => {
-    api.get(200, done)
-    await api
+  test('/login to return 400 if there is some missing data', (done) => {
+    api
       .post('/auth/login')
       .send({ email: 'test@mail.com' })
-      .expect(400, { error: 'Missing data' });
+      .expect(400, { error: 'Missing data' }, done);
   });
 });
