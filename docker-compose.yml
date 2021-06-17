@@ -6,6 +6,7 @@ services:
       - .env
     volumes:
       - ./src:/app/src
+      - .env:/app/.env
     ports:
       - "8000:8000"
 
