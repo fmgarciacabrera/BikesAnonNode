@@ -124,4 +124,28 @@ On `.eslintrc`:
 
 ## Changes in the code
 
-1.
+1. "body-parser" is deprecated in Express 4.6+
+
+Source: https://stackoverflow.com/questions/66525078/bodyparser-is-deprecated#answer-66538899
+
+We can change:
+
+```js
+import { json, urlencoded } from "body-parser";
+...
+app.use(urlencoded({ extended: false }));
+app.use(json());
+```
+
+por:
+
+```js
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+```
+
+And:
+
+```sh
+npm uninstall body-parser
+```

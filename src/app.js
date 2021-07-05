@@ -1,6 +1,5 @@
 import express from "express";
 import mongoose from "mongoose";
-import { json, urlencoded } from "body-parser";
 
 import { mainRouter } from "./routes/main";
 import { DB_URI, PORT } from "./config/secrets";
@@ -8,8 +7,8 @@ import { DB_URI, PORT } from "./config/secrets";
 const app = express();
 
 // middleware setup
-app.use(urlencoded({ extended: false }));
-app.use(json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // routes setup
 app.use(mainRouter);
