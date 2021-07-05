@@ -149,3 +149,5 @@ And:
 ```sh
 npm uninstall body-parser
 ```
+
+2. Extracts database logic from `app.js`.
