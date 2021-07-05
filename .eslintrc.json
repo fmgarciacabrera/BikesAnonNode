@@ -6,13 +6,15 @@
         "jest/globals": true
     },
     "extends": [
-        "standard"
+        "standard",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaVersion": 12
     },
     "plugins": [
-      "jest"
+      "jest",
+      "prettier"
     ],
     "rules": {
       "prettier/prettier": "error",

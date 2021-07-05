@@ -8,7 +8,7 @@ export default class Token {
    * @returns {string}
    */
   static generateToken(userId) {
-    return jwt.sign({userId}, JWT_SECRET, {expiresIn: '7d'});
+    return jwt.sign({ userId }, JWT_SECRET, { expiresIn: "7d" });
   }
 
   /**
@@ -20,7 +20,7 @@ export default class Token {
     try {
       jwt.verify(token, JWT_SECRET);
     } catch (e) {
-      throw new Error('Invalid token');
+      throw new Error("Invalid token");
     }
   }
 }

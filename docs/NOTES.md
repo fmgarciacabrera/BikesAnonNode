@@ -107,7 +107,7 @@ File: `.eslintrc.json`
 ##### eslint-plugin-prettier & configuring ESLint + Prettier
 
 ```sh
-npm i -D eslint-plugin-prettier eslint-config-prettier
+npm i -D prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
 On `.eslintrc`:
@@ -123,3 +123,5 @@ On `.eslintrc`:
 
 
 ## Changes in the code
+
+1.

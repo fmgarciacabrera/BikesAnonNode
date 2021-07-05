@@ -1,5 +1,5 @@
-import express from 'express';
-import { urlencoded, json } from 'body-parser';
+import express from "express";
+import { urlencoded, json } from "body-parser";
 
 export const getTestableApi = (baseUrl, router) => {
   const app = express();
