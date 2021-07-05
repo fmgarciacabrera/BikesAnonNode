@@ -151,3 +151,28 @@ npm uninstall body-parser
 ```
 
 2. Extracts database logic from `app.js`.
+
+3. Write error handler
+
+
+## User stories
+
+1. I, as an authenticated user, can upload a CSV so that BA can process the data and mail the cyclist licenses. (Note: for this story, it is not necessary to create a front end, only an endpoint and associated backend code)
+2. I, as a certified cyclist, can print a PDF of my license so that I can start riding immediately.
+3. I, as the owner of BA, can read an email containing a summary of the nightly activity so that I can gauge how well my business is doing.
+
+### 1. An authenticated user uploads a CSV
+
+### 2. A certified cyclist can print his license license
+
+A cyclist receives a link via email with which a license plate in PDF format can be downloaded.
+
+It can be implemented as a GET request with a unique secret parameter, identifying each cyclist.
+
+What we need:
+* The database stores a list of all certified cyclists, in a collection called `Cyclists`.
+* Each row contains: name, email address, license number, secret key.
+* For testing purposes we need some certified cyclists.
+* We need logic to generate a unique secret key.
+
+The PDF file name of each license plate has been previously generated and stored somewhere.
